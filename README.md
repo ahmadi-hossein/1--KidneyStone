@@ -10,27 +10,6 @@ Kidney stone detection is a critical step in urology and radiology. In this firs
 
 ---
 
-### 📂 Project Structure
-1--KidneyStone/
-│
-├── notebooks/
-│   └── kidney-stone-detection.ipynb  # Phase 1: Classification
-├── detection/
-│   ├── yolo_dataset/                 # Images & labels for YOLO
-│   ├── dataset.yaml                  # YOLO config
-│   ├── train.py / predict.py         # Training / Inference
-│   ├── runs/                         # YOLO training results
-│   └── yolo_results/                 # Output samples with bounding boxes
-├── models/                           # Saved CNN/YOLO models
-├── outputs/                          # Visualizations, predictions
-├── data/                             # Dataset info or instructions
-├── requirements.txt
-└── README.md
-
-
-
----
-
 ## 🔍 Problem Statement
 
 Kidney stones are a common urological disorder. Detecting them accurately in medical images (e.g., CT scans, ultrasound) is crucial for timely treatment. This project builds a deep learning model to:
