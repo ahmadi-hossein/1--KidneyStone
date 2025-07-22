@@ -1,8 +1,12 @@
-# 🧠 Kidney Stone Detection from Medical Images
+# 🧠 Kidney Stone Detection AI
 
 Welcome to the **Kidney Stone Detection** project – an AI-powered image classification system designed to identify kidney stones in medical images using deep learning.
 
 This project is part of the **IMT ChallengeHub** by [Mohammadreza Momeni](https://github.com/MrezaMomeni) and aims to showcase high-performance medical image classification using PyTorch and custom CNN models.
+
+## Introduction
+
+Kidney stone detection is a critical step in urology and radiology. In this first phase, we focus on building a robust image classification model using state-of-the-art deep learning techniques. The goal is to accurately distinguish kidney stone images from normal X-rays, providing a foundation for precise object localization in the next phase.
 
 ---
 
@@ -67,11 +71,43 @@ You can find all results in the `outputs/` folder or within the notebook.
 
  Evaluate on more real-world samples
 
-## 🗃️ Dataset
+### 📂 Dataset
 
-- ✅ **Source**: [Kaggle - Kidney Stone Detection Dataset]-(https://www.kaggle.com/datasets/imtkaggleteam/kidney-stone-classification-and-object-detection)
-- ⚠️ Dataset is not included in this repo due to size and Kaggle's policy.  
-- 📥 To run the code, download the dataset manually and place it in the `data/` folder.
+- Source: [Kidney Stone Dataset on Kaggle](https://www.kaggle.com/datasets/mansoordaku/urinary-tract-stone-detection-and-classification)
+- Structure: `train/`, `test/`, `labels.csv`
+- Format: JPG + YOLO-formatted annotations
+
+### Technologies
+## 🔄 Pipeline Overview
+
+1. 📊 **Exploratory Data Analysis (EDA)**
+2. 🧪 **Data Augmentation** using Albumentations
+3. 🧹 **Data Preprocessing** and Normalization
+4. 🧠 **Model Design** (Custom CNN with Keras)
+5. 🎯 **Training & Evaluation**
+6. 🧾 **Results Visualization** (accuracy, loss, confusion matrix)
+
+All steps are implemented in [this Kaggle notebook](https://www.kaggle.com/code/ahmadihossein/kidney-stone-detection).
+
+### Results
+## ✅ Results
+- Test Accuracy: **100%**
+- Metrics: Precision, Recall, F1-score available in the notebook
+- Confusion Matrix: Perfect classification
+
+> 📌 Next step: Move from classification to detection using YOLOv8.
+
+### License / Contribution / Contact
+## 📬 Contact
+For collaboration or questions, feel free to reach out:
+- **Author**: Hossein Ahmadi
+- **Email**: [your_email@example.com]
+- **Kaggle**: [@ahmadihossein](https://www.kaggle.com/ahmadihossein)
+
+---
+
+## 📄 License
+This project is licensed under the MIT License.
 
 ## 📬 Contact
 Developed with ❤️ by Hossein Ahmadi
