@@ -60,7 +60,7 @@ You can find all results in the `outputs/` folder or within the notebook.
 
 ## 🗃️ Dataset
 
-- ✅ **Source**: [Kaggle - Kidney Stone Detection Dataset]([https://www.kaggle.com/datasets](https://www.kaggle.com/datasets/imtkaggleteam/kidney-stone-classification-and-object-detection))
+- ✅ **Source**: [Kaggle - Kidney Stone Detection Dataset][https://www.kaggle.com/datasets](https://www.kaggle.com/datasets/imtkaggleteam/kidney-stone-classification-and-object-detection)
 - ⚠️ Dataset is not included in this repo due to size and Kaggle's policy.  
 - 📥 To run the code, download the dataset manually and place it in the `data/` folder.
 
