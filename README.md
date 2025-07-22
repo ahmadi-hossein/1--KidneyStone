@@ -58,6 +58,22 @@ You can find all results in the `outputs/` folder or within the notebook.
 
 ---
 
+
+ Migrate to ResNet18 (Transfer Learning)
+
+ Integrate Grad-CAM for explainability
+
+ Deploy via Streamlit or Gradio
+
+ Evaluate on more real-world samples
+
+## 📬 Contact
+Developed with ❤️ by Hossein Ahmadi
+🌐 Kaggle: ahmadihossein
+📧 Email: available on request
+
+🌟 Star this project if you find it useful!
+
 ## 🗃️ Dataset
 
 - ✅ **Source**: [Kaggle - Kidney Stone Detection Dataset]-(https://www.kaggle.com/datasets/imtkaggleteam/kidney-stone-classification-and-object-detection)
