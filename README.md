@@ -93,7 +93,8 @@ All steps are implemented in [this Kaggle notebook](https://www.kaggle.com/code/
 - Model: YOLOv8n
 - mAP@50:  0.85 (or your real number)
 - Sample Detection:
-  ![sample output](https://github.com/ahmadi-hossein/1--KidneyStone/blob/main/download.png)
+  ![](https://github.com/ahmadi-hossein/1--KidneyStone/blob/main/__results___101_0.png)
+  ![](https://github.com/ahmadi-hossein/1--KidneyStone/blob/main/download.png)
 
 ## 🔜 Next Steps
 - ✅ Build image classifier using CNN → Done
