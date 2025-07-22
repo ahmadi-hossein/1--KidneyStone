@@ -29,6 +29,9 @@ Kidney stones are a common urological disorder. Detecting them accurately in med
 - Accuracy: ✅ 100% test accuracy
 - Augmentations: Albumentations
 - Outputs: Confusion matrix, sample predictions
+![](https://github.com/ahmadi-hossein/1--KidneyStone/blob/main/__results___6_1.png)
+
+
 
 📌 Phase 2 – Object Detection (YOLOv8)
 - Framework: Ultralytics YOLOv8
