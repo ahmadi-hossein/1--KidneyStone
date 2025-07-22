@@ -1,6 +1,6 @@
-# 🧠 Kidney Stone Detection AI
+# 🧠 Kidney Stone Detection AI – Classification & Object Detection
+Welcome to the Kidney Stone Detection project – an AI-powered system that classifies and localizes kidney stones in X-ray images using deep learning (CNN + YOLOv8).
 
-Welcome to the **Kidney Stone Detection** project – an AI-powered image classification system designed to identify kidney stones in medical images using deep learning.
 
 This project is part of the **IMT ChallengeHub** by [Mohammadreza Momeni](https://github.com/MrezaMomeni) and aims to showcase high-performance medical image classification using PyTorch and custom CNN models.
 
@@ -10,21 +10,23 @@ Kidney stone detection is a critical step in urology and radiology. In this firs
 
 ---
 
-## 📂 Project Structure
+### 📂 Project Structure
 1--KidneyStone/
 │
 ├── notebooks/
-│ └── kidney-stone-detection.ipynb # Core notebook
-│
-├── models/ # Saved trained models
-│
-├── outputs/ # Visual outputs (confusion matrix, sample predictions)
-│
-├── data/ # Dataset info or instructions to download
-│
-├── requirements.txt # Python dependencies
-│
-└── README.md # This file
+│   └── kidney-stone-detection.ipynb  # Phase 1: Classification
+├── detection/
+│   ├── yolo_dataset/                 # Images & labels for YOLO
+│   ├── dataset.yaml                  # YOLO config
+│   ├── train.py / predict.py         # Training / Inference
+│   ├── runs/                         # YOLO training results
+│   └── yolo_results/                 # Output samples with bounding boxes
+├── models/                           # Saved CNN/YOLO models
+├── outputs/                          # Visualizations, predictions
+├── data/                             # Dataset info or instructions
+├── requirements.txt
+└── README.md
+
 
 
 ---
@@ -41,12 +43,20 @@ Kidney stones are a common urological disorder. Detecting them accurately in med
 
 ## 🧠 Model Summary
 
-- **Framework**: PyTorch
-- **Architecture**: Custom Convolutional Neural Network (CNN)
-- **Optimizer**: Adam
-- **Loss**: CrossEntropyLoss
-- **Data Augmentation**: Albumentations (Rotation, Flip, Brightness, etc.)
-- **Accuracy**: Achieved 100% test accuracy on internal evaluation
+📌 Phase 1 – Image Classification (CNN)
+- Framework: PyTorch
+- Architecture: Custom CNN
+- Accuracy: ✅ 100% test accuracy
+- Augmentations: Albumentations
+- Outputs: Confusion matrix, sample predictions
+
+📌 Phase 2 – Object Detection (YOLOv8)
+- Framework: Ultralytics YOLOv8
+- Architecture: YOLOv8n
+- Accuracy: mAP@50 ≈ XX% (fill after training)
+- Labels: YOLO-formatted bounding boxes
+- Outputs: Annotated images, metrics, detection visuals
+
 
 ---
 
@@ -89,20 +99,34 @@ You can find all results in the `outputs/` folder or within the notebook.
 
 All steps are implemented in [this Kaggle notebook](https://www.kaggle.com/code/ahmadihossein/kidney-stone-detection).
 
-### Results
-## ✅ Results
-- Test Accuracy: **100%**
-- Metrics: Precision, Recall, F1-score available in the notebook
-- Confusion Matrix: Perfect classification
+## 📊 Results
+📌 Classification
+- Test Accuracy: ✅ 100%
+- Confusion Matrix: ✅ Perfect
+- Sample Predictions: ✅ Visualized
 
-> 📌 Next step: Move from classification to detection using YOLOv8.
+📌 Object Detection (YOLOv8)
+- Training Epochs: 50
+- Model: YOLOv8n
+- mAP@50:  0.85 (or your real number)
+- Sample Detection:
+  ![sample output](detection/yolo_results/sample1.jpg)
+
+## 🔜 Next Steps
+- ✅ Build image classifier using CNN → Done
+- ✅ Move to object detection using YOLOv8 → Done
+- 🔄 Explore transfer learning with YOLOv8m or YOLOv8l
+- 🔍 Compare with Faster R-CNN
+- 🔬 Add explainability (Grad-CAM or detection heatmaps)
+- 🚀 Deploy detection as a Streamlit or Gradio app
+
 
 ### License / Contribution / Contact
 ## 📬 Contact
-For collaboration or questions, feel free to reach out:
-- **Author**: Hossein Ahmadi
-- **Email**: Available if any request
-- **Kaggle**: [@ahmadihossein](https://www.kaggle.com/ahmadihossein)
+Developed with ❤️ by Hossein Ahmadi  
+🌐 Kaggle: [@ahmadihossein](https://www.kaggle.com/ahmadihossein)  
+📧 Email: available upon request
+
 
 ---
 
