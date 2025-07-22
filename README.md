@@ -101,20 +101,12 @@ All steps are implemented in [this Kaggle notebook](https://www.kaggle.com/code/
 
 
 ### License / Contribution / Contact
-## 📬 Contact
-Developed with ❤️ by Hossein Ahmadi  
-🌐 Kaggle: [@ahmadihossein](https://www.kaggle.com/ahmadihossein)  
-📧 Email: available upon request
-
-
----
-
 ## 📄 License
 This project is licensed under the MIT License.
 
 ## 📬 Contact
 Developed with ❤️ by Hossein Ahmadi
 🌐 Kaggle: ahmadihossein
-📧 Email: available on request
+📧 Email: available upon request
 
 🌟 Star this project if you find it useful!
