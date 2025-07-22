@@ -68,4 +68,4 @@ Ultralytics Doc: [Click here](https://docs.ultralytics.com)
 Radiopaedia Doc: [Click here](https://radiopaedia.org/articles/urolithiasis?lang=us)
 
 
-# Best Wishes, Mr Momeni.
+# Best Wishes, Mr Ahmadi.
