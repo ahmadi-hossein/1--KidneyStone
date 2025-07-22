@@ -1,70 +1,87 @@
-# 🏆 Kidney Stone Detection Challenge
+# 🧠 Kidney Stone Detection from Medical Images
 
-Welcome to the Kidney Stone Detection Challenge!
-In this project, you will work with a real-world medical imaging dataset to build deep learning models capable of detecting and localizing kidney stones in ultrasound images.
+Welcome to the **Kidney Stone Detection** project – an AI-powered image classification system designed to identify kidney stones in medical images using deep learning.
 
-📂 Dataset Overview
-The dataset comprises 9,416 ultrasound images categorized into two classes:
+This project is part of the **IMT ChallengeHub** by [Mohammadreza Momeni](https://github.com/MrezaMomeni) and aims to showcase high-performance medical image classification using PyTorch and custom CNN models.
 
-Normal: 4,414 images
-Stone: 5,002 images
-All images are resized to 512 x 512 pixels.
-They were collected from multiple scan centers and hospitals using ultrasound machines such as SAMSUNG RS85, SAMSUNG HS60, SAMSUNG RS80A, and SAMSUNG HS70A, while ensuring the privacy and confidentiality of patient data.
+---
 
-License: CC BY 4.0
-
-# 🧠 Objectives
-You will complete two main tasks:
-
-✅ Task 1: Image Classification
-
-Develop a deep learning model to classify ultrasound images as either:
-
-Normal
-Stone
-
-💡 Suggested Approach:
-
-Use transfer learning with pre-trained CNN architectures (e.g., ResNet, EfficientNet).
-Experiment with data augmentation to improve generalization.
-Evaluate your model with accuracy, precision, recall, and confusion matrix.
-
-Deliverables:
-
-A Jupyter Notebook or Python script with the complete training pipeline.
-A summary of results and evaluation metrics.
-
----------------------------------------------------------------------------------------------------
-
-✅ Task 2: Object Detection of Kidney Stones
-
-This task focuses only on the Stone class images. 
-
-Steps:
-
-Annotation:
-Manually label the regions containing kidney stones using bounding boxes.
-Tools you can use:
-Label Studio
-CVAT
-Roboflow Annotate
-Save annotations in YOLO format or Pascal VOC (XML).
-Tip: Annotate carefully to capture the precise location and size of stones.
-
-Model Development:
-Train an object detection model (e.g., YOLOv8, YOLOv11, Faster R-CNN) to automatically locate kidney stones in new images.
-Evaluate using mean Average Precision (mAP), IoU, and detection accuracy.
-
-Deliverables:
-Your labeled dataset (exported annotations).
-A Jupyter Notebook or script demonstrating model training and inference.
-Example predictions visualized on test images.
+## 📂 Project Structure
+1--KidneyStone/
+│
+├── notebooks/
+│ └── kidney-stone-detection.ipynb # Core notebook
+│
+├── models/ # Saved trained models
+│
+├── outputs/ # Visual outputs (confusion matrix, sample predictions)
+│
+├── data/ # Dataset info or instructions to download
+│
+├── requirements.txt # Python dependencies
+│
+└── README.md # This file
 
 
-# 📘 Resources to Study
-Before starting, you are encouraged to review:
+---
 
-Ultralytics Doc: [Click here](https://docs.ultralytics.com)
-Radiopaedia Doc: [Click here](https://radiopaedia.org/articles/urolithiasis?lang=us)
+## 🔍 Problem Statement
 
-# Provided By: Mr Momeni.
+Kidney stones are a common urological disorder. Detecting them accurately in medical images (e.g., CT scans, ultrasound) is crucial for timely treatment. This project builds a deep learning model to:
+
+- Classify images as **Stone / No Stone**
+- Enable reproducible detection with high accuracy
+- Visualize key metrics (confusion matrix, sample predictions)
+
+---
+
+## 🧠 Model Summary
+
+- **Framework**: PyTorch
+- **Architecture**: Custom Convolutional Neural Network (CNN)
+- **Optimizer**: Adam
+- **Loss**: CrossEntropyLoss
+- **Data Augmentation**: Albumentations (Rotation, Flip, Brightness, etc.)
+- **Accuracy**: Achieved 100% test accuracy on internal evaluation
+
+---
+
+## 📊 Results
+
+| Metric            | Value       |
+|-------------------|-------------|
+| Test Accuracy     | ✅ 100%     |
+| Confusion Matrix  | ✅ Included |
+| Sample Predictions| ✅ Visualized |
+
+You can find all results in the `outputs/` folder or within the notebook.
+
+---
+
+## 🗃️ Dataset
+
+- ✅ **Source**: [Kaggle - Kidney Stone Detection Dataset](https://www.kaggle.com/datasets)
+- ⚠️ Dataset is not included in this repo due to size and Kaggle's policy.  
+- 📥 To run the code, download the dataset manually and place it in the `data/` folder.
+
+---
+
+## 🚀 How to Run
+
+> Python ≥ 3.8 recommended
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/ahmadi-hossein/1--KidneyStone.git
+cd 1--KidneyStone
+
+### 2. Install dependencies
+pip install -r requirements.txt
+
+### 3. Download the dataset
+
+### 4. Run the notebook
+Use Jupyter or VS Code to open.
+
+
