@@ -67,5 +67,4 @@ Before starting, you are encouraged to review:
 Ultralytics Doc: [Click here](https://docs.ultralytics.com)
 Radiopaedia Doc: [Click here](https://radiopaedia.org/articles/urolithiasis?lang=us)
 
-# Provided By:
-# Best Wishes, Mr Momeni.
+# Provided By: Mr Momeni.
