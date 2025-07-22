@@ -101,7 +101,7 @@ All steps are implemented in [this Kaggle notebook](https://www.kaggle.com/code/
 ## 📬 Contact
 For collaboration or questions, feel free to reach out:
 - **Author**: Hossein Ahmadi
-- **Email**: [your_email@example.com]
+- **Email**: Available if any request
 - **Kaggle**: [@ahmadihossein](https://www.kaggle.com/ahmadihossein)
 
 ---
