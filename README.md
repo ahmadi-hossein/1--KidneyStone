@@ -73,7 +73,7 @@ You can find all results in the `outputs/` folder or within the notebook.
 
 ### 📂 Dataset
 
-- Source: [Kidney Stone Dataset on Kaggle](https://www.kaggle.com/datasets/mansoordaku/urinary-tract-stone-detection-and-classification)
+- Source: [Kidney Stone Dataset on Kaggle](https://www.kaggle.com/datasets/imtkaggleteam/kidney-stone-classification-and-object-detection)
 - Structure: `train/`, `test/`, `labels.csv`
 - Format: JPG + YOLO-formatted annotations
 
