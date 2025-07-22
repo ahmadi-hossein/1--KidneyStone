@@ -3,7 +3,7 @@ Welcome to the Kidney Stone Detection project – an AI-powered system that clas
 
 This project is part of the **IMT ChallengeHub** by [Mohammadreza Momeni](https://github.com/MrezaMomeni) and aims to showcase high-performance medical image classification using PyTorch and custom CNN models.
 
-(https://github.com/ahmadi-hossein/1--KidneyStone/blob/main/__results___31_0.png)
+!(https://github.com/ahmadi-hossein/1--KidneyStone/blob/main/__results___31_0.png)
 
 ## Introduction
 
